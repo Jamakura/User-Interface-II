@@ -1,70 +1,80 @@
+html{
+  font-size: 62.5%;
+}
+  
 body {
-    background-image: url(https://images.unsplash.com/photo-1516576291981-b64ed8383ba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+    background-image: url(https://images.unsplash.com/photo-1513880838915-3b5b17da4383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+    background-size: 100% 100%;
+    
   }
   *{
-    color: lightcyan;
+    color: cyan;
   }
   h1{
     font-family:Caveat;
-    font-size: 60px;
-    padding:20px 20px 30px 20px;
+    font-size: 6rem;
+    padding: 5%;
   }
   
   .container {
     width: 600px;
-    margin:20px;
+    margin:5%;
   }
   
-  .container header nav a {
+  .container nav a {
     margin: 0 10px;
-    border:1px solid teal;
+    border:1px solid cyan;
     padding: 10px;
     display: flex row;
     justify:space-evenly;
     border-radius: 10px;
     text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 2rem;
     font-family:oswald; 
   }
   
   h2{
-    padding:20px;
+    padding:5%;
     font-family:Caveat;
-    font-size:30px;
+    font-size:3rem;
   }
   h3{
-    padding:20px;
+    padding:5%;
     font-family:Caveat;
-    font-size:30px;
+    font-size: 2rem;
   }
   
   .projects {
-    width: 600px;
-    margin:20px;
+    width: 50%;
+    margin:5%;
   }
   
   .projects {
-    border:1px solid teal;
+    border:1px solid cyan;
     padding: 10px;
     display: flex row;
     border-radius: 10px;
     text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 2rem;
     font-family:oswald; 
-    
   }
-  
+ 
+
   img{
-    border-radius:20px;
-    padding:30px;
+    border-radius: 50px;
+    padding:5%;
   }
-  
-  p{
-    padding:20px;
+
+  .jellyfish{
+    border-radius: 50%;
+  }
+
+   p{
+    padding:5%;
     font-family:oswald;
-    font-size:20px;
+    font-size: 2rem;
   }
   
   .content-row{
@@ -78,24 +88,41 @@ body {
   }
   
   .contact {
-    width: 600px;
-    margin:20px;
+    width: 50%;
+    margin:5%;
+    padding: 5%;
   }
   
   .contact {
-    border:1px solid teal;
+    border:1px solid cyan;
     padding: 10px;
     display: flex row;
     border-radius: 10px;
     text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 10%;
+    font-size: 2rem;
     font-family:oswald; 
     }
   footer{
     text-align:center;
+    margin: 5%;
   }
-  .fa fa-facebook .fa fa-twitter{
-    padding:60px;
+  .social{
+    font-size: 3rem;
+    text-decoration: none;
+    padding:2%
   }
-  
+  @media(max-width: 800px){
+    .content-row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media(max-width: 500px){
+    .jellyfish{
+      display:none;
+    }
+    img{
+      border-radius: 50%;
+    }
+  }
