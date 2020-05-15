@@ -21,7 +21,7 @@ body {
     margin:5%;
   }
   
-  .container nav a {
+  .container nav a  {
     margin: 0 10px;
     border:1px solid cyan;
     padding: 10px;
@@ -33,7 +33,19 @@ body {
     font-size: 2rem;
     font-family:oswald; 
   }
-  
+
+  .container nav a:hover {
+    background-color:cyan;
+    color: teal;
+    padding:10px;
+    border: 2px solid teal;
+    font-size: 2rem;
+    margin-top: 5%;
+    transition:0.8s;
+    border-radius:50%;
+    font-family: oswald 
+  }
+
   h2{
     padding:5%;
     font-family:Caveat;
@@ -61,7 +73,17 @@ body {
     font-family:oswald; 
   }
  
-
+  .projects:hover {
+    background-color:cyan;
+    color: teal;
+    padding:10px;
+    border: 2px solid teal;
+    font-size: 2rem;
+    margin-top: 5%;
+    transition:0.8s;
+    border-radius:50%;
+    font-family: oswald 
+  }
   img{
     border-radius: 50px;
     padding:5%;
@@ -103,6 +125,18 @@ body {
     font-size: 2rem;
     font-family:oswald; 
     }
+
+    .contact:hover {
+      background-color:cyan;
+      color: teal;
+      padding:10px;
+      border: 2px solid teal;
+      font-size: 2rem;
+      margin-top: 5%;
+      transition:0.8s;
+      border-radius:50%;
+      font-family: oswald   }
+
   footer{
     text-align:center;
     margin: 5%;
@@ -112,6 +146,11 @@ body {
     text-decoration: none;
     padding:2%
   }
+
+
+
+
+}
   @media(max-width: 800px){
     .content-row {
       flex-direction: column-reverse;
@@ -119,6 +158,9 @@ body {
   }
 
   @media(max-width: 500px){
+    body {
+      background
+    }
     .jellyfish{
       display:none;
     }
